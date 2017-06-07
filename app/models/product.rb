@@ -21,4 +21,6 @@ class Product < ApplicationRecord
   acts_as_list
 
   has_many :comments
+
+  scope :random5, ->{ order("RANDOM()").limit(5) }
 end

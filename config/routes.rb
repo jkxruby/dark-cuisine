@@ -25,6 +25,7 @@ Rails.application.routes.draw do
     resources :categories
 
     resources :products do
+
       member do
         patch :move_up
         patch :move_down
@@ -42,6 +43,10 @@ Rails.application.routes.draw do
 
   resources :products do
     resources :comments
+
+    collection do
+      post :lucky_cart
+    end
 
     collection do
       get :search
