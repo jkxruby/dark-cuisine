@@ -45,7 +45,8 @@ $(function(){
 				<li><a href="/">品味食验室</a></li>
 				<li><a href="/party/index">大厨聚会</a></li>
 				<li><a href="/jobs">大厨招聘</a></li>
-				<li><a href="/dcarts">后厨 ( <%= current_cart.products.count %> )</a></li>
+				<li><%= link_to "Q&A", question_index_path %></li>
+				<li><a href="/dcarts">后厨 ( <%= current_dcart.dproducts.count %> )</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">

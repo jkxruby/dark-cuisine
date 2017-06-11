@@ -62,6 +62,18 @@
 				<li><a href="/">品味食验室</a></li>
 				<li><a href="/dproducts">黑暗料理</a></li>
 				<li><%= link_to("大厨招聘", jobs_path) %></li>
+				<li><%= link_to("lucky cart", random_index_path)%></li>
+				<li><%= link_to "Q&A", question_index_path %></li>
+				<li>
+					<%= form_tag search_products_path , :method => :get do %>
+						<div class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="text" class="form-control" name="q" value="<%= params[:q] %>" placeholder="用你想要的底料">
+							</div>
+							<button type="submit" class="btn btn-default">提交</button>
+						</div>
+					<% end %>
+				</li>
 			</ul>
 		</div>
 	</div>
