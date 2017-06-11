@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'party/index'
   get 'question/index'
   get 'random/index'
+  get 'thanks/index'
+
 
 
 
